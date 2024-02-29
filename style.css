@@ -11,6 +11,18 @@ a {
   color: inherit;
 }
 
+ul,
+ol {
+  list-style: none;
+}
+
+footer {
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 2rem;
+}
+
 .container {
   width: 1440px;
   margin: 0 auto;
@@ -49,6 +61,42 @@ a {
   padding: 0.5rem 0.25rem;
   border-radius: 0.25rem;
   border: 1px solid gray;
+}
+
+.ratings {
+  display: flex;
+  gap: 0.5rem;
+  color: orange;
+}
+
+.profile-client {
+  display: flex;
+  margin-top: 1rem;
+  gap: 1rem;
+  align-items: center;
+}
+
+.profile-client > div > h5 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.profile-client > div > p {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.profile-client > div {
+  flex: 1;
+}
+
+.profile-client > img {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+  border: 0.25rem solid white;
+  border-radius: 100%;
+  box-shadow: 12px 0px 15px 0px rgba(128, 128, 128, 0.4);
 }
 
 #header {
@@ -101,10 +149,6 @@ a {
   gap: 1rem;
   margin-right: 2rem;
   font-weight: 600;
-}
-
-#navbar-right > ul > li {
-  list-style: none;
 }
 
 #navbar-right > ul > li > a {
@@ -436,47 +480,10 @@ a {
   box-shadow: 4px 0px 5px 2px rgba(128, 128, 128, 0.3);
 }
 
-#testimonial-container > div > .ratings {
-  display: flex;
-  gap: 0.5rem;
-  color: orange;
-}
-
 #testimonial-container > div > p {
   font-size: 0.8rem;
   margin-top: 1rem;
   color: gray;
-}
-
-#testimonial-container > div > .profile-client {
-  display: flex;
-  margin-top: 1rem;
-  gap: 1rem;
-  align-items: center;
-}
-
-#testimonial-container > div > .profile-client > div > h5 {
-  font-size: 1.125rem;
-  font-weight: 600;
-}
-
-#testimonial-container > div > .profile-client > div > p {
-  font-size: 0.8rem;
-  color: gray;
-}
-
-#testimonial-container > div > .profile-client > div {
-  flex: 1;
-}
-
-#testimonial-container > div > .profile-client > img {
-  width: 4rem;
-  height: 4rem;
-  object-fit: cover;
-  border: 0.25rem solid white;
-  border-radius: 100%;
-  box-shadow: 12px 0px 15px 0px rgba(128, 128, 128, 0.4);
-  flex: 0;
 }
 
 #form {
@@ -508,6 +515,7 @@ a {
 
 #contact-left > div > i {
   font-size: 1.5rem;
+  color: #243b96;
 }
 
 #contact-left > div > div > h3 {
@@ -545,20 +553,70 @@ a {
   color: white;
 }
 
-footer {
-  padding: 4rem;
-  display: grid;
-  grid-template-columns: 1.5fr 1fr 2fr;
-  gap: 2rem;
-}
-
 #footer-left > h2 {
   background-color: white;
   color: #243b96;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 2rem;
   border-radius: 4px;
   padding: 0.5rem;
+  text-align: center;
+}
+
+#footer-left > p {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  line-height: 2;
+}
+
+#footer-left > div {
+  display: flex;
+  margin-top: 2rem;
+  gap: 0.5rem;
+}
+
+#footer-left > div > a {
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  border: 1px solid white;
+  padding: 0.125rem;
+  border-radius: 100%;
+  text-align: center;
+}
+
+#footer-left > div > a > i {
+  font-size: 0.75rem;
+}
+
+#footer-center > h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+#footer-center > div {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+#footer-center > div > span {
+  font-size: 0.8rem;
+}
+
+#footer-right {
+  padding-left: 4rem;
+}
+
+#footer-right > h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+#footer-right > ul > li {
+  font-size: 0.8rem;
+  margin-top: 1rem;
 }
 
 #copyright {
@@ -569,6 +627,7 @@ footer {
 }
 
 #copyright > .container > p {
+  font-size: 0.8rem;
   font-family: "Roboto Slab", serif;
   font-weight: 300;
 }
