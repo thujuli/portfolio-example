@@ -655,6 +655,7 @@ footer {
 
 @media screen and (max-width: 640px) {
   footer {
+    padding: 2rem;
     grid-template-areas:
       "left left left left left"
       "center center center right right";
@@ -704,12 +705,13 @@ footer {
   }
 
   #skills {
-    padding: 2rem 3rem;
+    padding: 2rem;
     position: static;
     flex-direction: column;
   }
 
   #skills > div {
+    flex-direction: column;
     box-shadow: 0 0 1px;
   }
 
@@ -737,6 +739,13 @@ footer {
     padding: 0 2rem;
   }
 
+  #services,
+  #progress,
+  #work,
+  #testimonial,
+  #contact {
+    padding: 2rem;
+  }
   #services-container,
   #progress-container {
     grid-template-columns: repeat(1, 1fr);
